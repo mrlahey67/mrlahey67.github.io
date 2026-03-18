@@ -1,0 +1,14 @@
+title: "Victor Marques Fejø"
+description: "Political science research on Danish politics, public opinion, and party strategy."
+author: "Victor Marques Fejø"
+email: ""
+
+url: ""
+baseurl: ""
+
+markdown: kramdown
+permalink: /analyses/:title/
+
+kramdown:
+  input: GFM
+  hard_wrap: false
