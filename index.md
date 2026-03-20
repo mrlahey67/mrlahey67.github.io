@@ -6,9 +6,7 @@ title: Home
 
 # Victor Marques Fejø
 
-I am a political science researcher completing a Master's thesis at [University name]. My work focuses on Danish electoral politics, party strategy, and public opinion formation. My thesis examines whether elite-level convergence on immigration policy between Socialdemokratiet and Venstre produced corresponding opinion convergence among voters — a test of Zaller's mainstreaming hypothesis using four waves of the Danish National Election Study (2011–2022).
-
-This site collects the empirical analyses from that thesis, written for a general audience. The analyses draw on survey data from approximately 11,470 respondents across four election cycles and use the Chapel Hill Expert Survey to measure party positions over time.
+Jeg hedder Victor Marques Fejø og er en statskundskabsstuderende fra Københavns Universitet, som snart skal til at skrive speciale. Denne side er en samling af analyser jeg har lavet både ifm. gamle opgaver, men også som del af en ide-workshop, hvor jeg har lavet nogle research designs til mit kommende speciale. Alle analyser er lavet med offentligt tilgængelige data fra: Den Danske Valgundersøgelse, Chapel Hill Expert Survey, Den Danske Valgdatabase, Arbejderbevægelsens Erhvervsråd, Kommunernes Landsforening og Danmarks Statistik.
 
 </div>
 
