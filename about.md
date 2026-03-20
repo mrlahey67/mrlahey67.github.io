@@ -17,4 +17,6 @@ My thesis tests Zaller's (1992) mainstreaming hypothesis: when political elites 
 
 ## Contact
 
-Feel free to reach out via email: [your email here]
+- **Tlf:** 31 44 21 10
+- **Email:** [vmfejoe@gmail.com](mailto:vmfejoe@gmail.com)
+- **Skolemail:** [xjz767@alumni.ku.dk](mailto:xjz767@alumni.ku.dk)
