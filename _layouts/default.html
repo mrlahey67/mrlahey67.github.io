@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="/assets/js/lang.js"></script>
+  <script>
+    (function () {
+      var lang = localStorage.getItem('lang') || 'en';
+      document.documentElement.setAttribute('data-lang', lang);
+    })();
+  </script>
 </head>
 <body>
   {% include nav.html %}
@@ -14,5 +19,20 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  <script>
+    function toggleLang() {
+      var current = document.documentElement.getAttribute('data-lang') || 'en';
+      var next = current === 'en' ? 'da' : 'en';
+      document.documentElement.setAttribute('data-lang', next);
+      localStorage.setItem('lang', next);
+      var btn = document.getElementById('langToggle');
+      if (btn) btn.textContent = next === 'en' ? 'Dansk' : 'English';
+    }
+    (function () {
+      var lang = localStorage.getItem('lang') || 'en';
+      var btn = document.getElementById('langToggle');
+      if (btn) btn.textContent = lang === 'en' ? 'Dansk' : 'English';
+    })();
+  </script>
 </body>
 </html>
