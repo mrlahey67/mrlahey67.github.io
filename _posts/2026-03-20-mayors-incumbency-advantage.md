@@ -45,7 +45,19 @@ The mean change in the mayor party's vote share is +0.7 percentage points, indic
 
 The high turnover rate underscores the relevance of the research question. With roughly one in three municipalities changing mayor party each cycle, the incumbency advantage — or lack thereof — has significant implications for local party strategy and coalition formation.
 
-*Figure 1 reveals a clear rightward shift for first-reelection municipalities. The mean vote share change for new mayor parties at their first reelection is approximately +4.6 pp, compared to a near-zero mean for continuing mayors. The distributions overlap substantially, indicating considerable heterogeneity, but the location shift is visually striking.*
+![Distribution of vote share changes, split by first reelection status](/assets/figures/incumbency_fig1_distribution.png)
+
+*Figure 1: Density plots of Δ mayor party vote share, split by first reelection status. Dashed lines indicate group means.*
+
+Figure 1 reveals a clear rightward shift for first-reelection municipalities. The mean vote share change for new mayor parties at their first reelection is approximately +4.6 pp, compared to a near-zero mean for continuing mayors. The distributions overlap substantially, indicating considerable heterogeneity, but the location shift is visually striking.
+
+![Mean vote share change by category](/assets/figures/incumbency_fig2_means.png)
+
+*Figure 2: Mean Vote Share Change by Category.*
+
+![Timeline of notable turnovers](/assets/figures/incumbency_fig3_timelines.png)
+
+*Figure 3: Mayor party vote share across elections for the 8 largest municipalities experiencing turnovers. Party letters and colours identify the mayor party at each election.*
 
 ---
 
@@ -76,6 +88,10 @@ The results are consistent and statistically significant across all specificatio
 With full municipal-level controls (Model 3), the estimate is 2.89 pp and remains highly significant (p = 0.001). The control for previous tenure captures mean reversion (−0.7 pp per term), while the national trend coefficient is positive and significant, confirming that parties riding national tailwinds also gain locally. Adding election fixed effects (Model 4) reduces the estimate to 2.38 pp (p = 0.008), absorbing election-specific shocks but leaving the core finding intact.
 
 The municipality fixed effects model (Model 5) produces the strongest estimate: 4.27 pp (p < 0.001). This is the most demanding specification, absorbing all time-invariant municipality characteristics and all election-specific shocks. The estimate is identified purely from within-municipality variation: the same municipality performs differently when its mayor party is defending for the first time versus when it has been in power for multiple terms. That the coefficient is largest in this specification suggests that unobserved municipal characteristics that correlate with both turnover probability and vote share changes were attenuating the OLS estimates (downward confounding).
+
+![Coefficient plot across model specifications](/assets/figures/incumbency_fig4_coefplot.png)
+
+*Figure 4: Point estimates and 95% confidence intervals for the 'first reelection' coefficient across model specifications.*
 
 ---
 

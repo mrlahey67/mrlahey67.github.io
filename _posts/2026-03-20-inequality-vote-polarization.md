@@ -69,7 +69,15 @@ Table 2 shows the ten most and least internally unequal municipalities. The top 
 
 *Top panel: 10 highest inequality. Bottom panel: 10 lowest.*
 
+![Scatter plot of intra-municipal inequality vs. geographic vote polarization](/assets/figures/inequality_fig1_scatter.png)
+
+*Figure 1: Intra-municipal income inequality (SD of top-10% decile share) versus geographic vote polarization (SD of red-bloc share). Linear fit: r = −0.07, p = 0.506. N = 86 municipalities, KV2025.*
+
 The scatter plot of inequality vs. vote polarization reveals no clear positive association. The linear fit is essentially flat (r = −0.07, p = 0.506). Several municipalities stand out as interesting cases: København combines high inequality with moderate vote dispersion, while Hillerød and Fredensborg show high inequality alongside relatively high dispersion. Rødovre, a socioeconomically homogeneous red-bloc municipality, has very low vote dispersion (0.035). The absence of a clear bivariate pattern sets the stage for the regression analysis below.
+
+![Mean vote dispersion over three elections, high vs low inequality municipalities](/assets/figures/inequality_fig3_timetrend.png)
+
+*Figure 2: Mean within-municipality vote dispersion (SD of red-bloc share) across the three elections, split by municipality inequality level (above/below median). Error bars show 95% CIs.*
 
 Tracking vote dispersion over time and comparing high-inequality and low-inequality municipalities (split at the median), both groups show a slight upward trend in polarization from KV2017 to KV2025, but the difference between groups is minimal. High-inequality municipalities do not consistently exhibit more vote dispersion than low-inequality ones. The KV2025 election shows a marginal divergence, but the confidence intervals overlap substantially. This temporal pattern is consistent with a general, slow increase in geographic vote polarization across Danish municipalities, unrelated to their internal income structure.
 
@@ -128,6 +136,10 @@ Only the range of the top-10% decile share approaches significance (p = 0.056), 
 Alternative dependent variables (IQR and range of red-bloc share instead of SD) yield similarly null results. Using IQR, the coefficient is −0.00089 (p = 0.699); using range, it is −0.00012 (p = 0.974). The turnout dispersion model suggests a marginally positive relationship between inequality and within-municipality variation in turnout (β = 0.00249, p = 0.102, N = 86), though this does not reach significance at conventional levels.
 
 Two additional sensitivity checks confirm the robustness of the null. Including Moderaterne in the blue bloc (KV2025 only) yields β = 0.00054 (p = 0.670). Excluding København and Aarhus — outliers with 56 and 54 parishes respectively — produces β = 0.00050 (p = 0.692). The core null result is entirely stable.
+
+![Coefficient on intra-municipal inequality across specifications](/assets/figures/inequality_fig4_coefplot.png)
+
+*Figure 3: Coefficient on intra-municipal inequality across specifications. Blue dots indicate significant coefficients; grey dots indicate non-significant. Horizontal bars show 95% CIs.*
 
 ---
 
