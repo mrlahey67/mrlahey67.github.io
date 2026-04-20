@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 I am a political science student at the University of Copenhagen, finishing a Master's degree. My research focuses on Danish electoral politics — specifically how voters form opinions, respond to elite cues, and sort across party lines.
 
@@ -37,7 +37,7 @@ All analyses use publicly available data:
 
 </div>
 
-<div class="lang-da">
+<div class="lang-da" markdown="1">
 
 Jeg er en statskundskabsstuderende på Københavns Universitet og er ved at afslutte min kandidatuddannelse. Min forskning handler om dansk valgpolitik — særligt hvordan vælgere danner holdninger, reagerer på elite-signaler og sorterer sig på tværs af partier.
 

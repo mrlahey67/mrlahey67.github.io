@@ -6,13 +6,13 @@ title: Home
 
 # Victor Marques Fejø
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 I am a political science student at the University of Copenhagen, finishing a Master's degree and preparing to write my thesis. This site collects empirical analyses produced as part of a structured thesis workshop — working through 8–12 quantitative research designs across Danish electoral politics before committing to a final topic. The analyses cover voter opinion formation, immigration attitudes, welfare chauvinism, bloc switching, local incumbency, and geographic electoral polarization. All analyses use publicly available data from the Danish National Election Study, Chapel Hill Expert Survey, Danish Election Database, Arbejderbevægelsens Erhvervsråd, Kommunernes Landsforening, and Danmarks Statistik.
 
 </div>
 
-<div class="lang-da">
+<div class="lang-da" markdown="1">
 
 Jeg er en statskundskabsstuderende fra Københavns Universitet, som snart skal til at skrive speciale. Denne side er en samling af analyser jeg har lavet både ifm. gamle opgaver, men også som del af en ide-workshop, hvor jeg har lavet nogle research designs til mit kommende speciale. Analyserne dækker meningsdannelse, indvandringsholdninger, velfærdschauvinisme, blokskift, kommunal incumbency og geografisk valgpolarisering. Alle analyser er lavet med offentligt tilgængeligt data fra: Den Danske Valgundersøgelse, Chapel Hill Expert Survey, Den Danske Valgdatabase, Arbejderbevægelsens Erhvervsråd, Kommunernes Landsforening og Danmarks Statistik.
 
