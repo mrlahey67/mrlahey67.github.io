@@ -18,7 +18,9 @@ This study investigates welfare chauvinism among Danish voters using four waves 
 
 The analysis addresses two interlinked research questions. **Design A** examines attitude coherence: has the correlation between immigration restrictiveness and welfare generosity strengthened over time, particularly among S voters, as S adopted its dual strategy? If welfare chauvinism is becoming more coherent as a political package, we should observe an increasing positive correlation between wanting generous welfare for natives and opposing welfare for immigrants. **Design C** examines party capture: how large is the welfare chauvinist voter segment, and which party captures it across the 2011–2022 period? If S's dual strategy is effective, its share of welfare chauvinist voters should grow, potentially at the expense of Dansk Folkeparti (DF).
 
-Two dimensions define the analytical framework. Immigration restrictiveness is measured using a question asking whether immigrants should have the same right to social assistance as Danes (5-point Likert scale, available in all four waves). Welfare generosity for natives is constructed as an additive index from four items available across all waves: (1) the classic social reforms A siger/B siger item, (2) the income leveling item, (3) the tax-versus-public-service preference, and (4) agreement that high incomes should be taxed harder. Each component is standardized to 0–1 before averaging, and the composite is rescaled to 1–5 for comparability with the immigration dimension. For the three waves where spending battery data are available (2011, 2015, 2019), a supplementary direct welfare chauvinism measure is constructed as the difference between preferred spending on folkepension and spending on refugees.
+Two dimensions define the analytical framework. Immigration restrictiveness is measured using a question asking whether immigrants should have the same right to social assistance as Danes (5-point Likert scale, available in all four waves). Welfare generosity for natives is constructed as an additive index from four items available across all waves: (1) the classic social reforms A siger/B siger item, (2) the income leveling item, (3) the tax-versus-public-service preference, and (4) agreement that high incomes should be taxed harder. Each component is standardized to 0–1 before averaging, and the composite is rescaled to 1–5 for comparability with the immigration dimension. This index captures general redistributive preferences rather than welfare for Danes specifically — a limitation discussed in Section 6. For the three waves where spending battery data are available (2011, 2015, 2019), a supplementary direct welfare chauvinism measure is constructed as the difference between preferred spending on folkepension and spending on refugees.
+
+The analytical approach combines descriptive two-dimensional mapping (scatter plots and quadrant classification), regression analysis (pooled OLS with interaction terms), and robustness checks including alternative welfare measures and sample restrictions. All analyses use the six major Danish parties (S, V, DF, SF, RV, EL) as the focus set.
 
 ---
 
@@ -28,17 +30,21 @@ The Chapel Hill Expert Survey (CHES) provides systematic expert-rated measures o
 
 Figure 1 shows party positions on the CHES immigration policy dimension from 2006 to 2024 (higher values indicate more restrictive positions). Socialdemokratiet underwent a dramatic shift, moving from a moderate position (5.5 in 2014) to a markedly more restrictive position by 2019 (6.86), nearly converging with Venstre (7.5). This represents the most dramatic positional change of any major Danish party on immigration. Dansk Folkeparti maintained its position as the most restrictive party throughout (approximately 9.0–9.7), while the left parties (SF, RV, EL) remained on the open/liberal end of the spectrum (scoring between 1 and 4).
 
-![CHES Immigration Positions 2006–2024](/assets/figures/ches_immigration_positions_corrected.png)
+![CHES Immigration Positions 2006–2024](/assets/figures/welfare_fig1_ches_immigration.png)
 
 *Figure 1: CHES Immigration Positions 2006–2024. Higher values indicate more restrictive positions (0 = strongly opposes restriction, 10 = strongly favors restriction).*
 
 The dual strategy becomes visible when immigration positions are juxtaposed with economic left-right positions. Figure 2 shows the S–V comparison across both dimensions. On immigration (left panel), S converges dramatically toward V and even surpasses it by the 2024 CHES wave. On economics (right panel), S remains firmly to the left of V throughout the entire period. This divergence is the essence of the dual strategy: S moved rightward on the cultural-immigration dimension while maintaining or reinforcing its redistributive economic position. The result is a distinctive positioning — economically left, culturally restrictive — that maps directly onto welfare chauvinist preferences.
 
-![S's Dual Strategy — Immigration convergence and economic divergence](/assets/figures/ches_dual_strategy.png)
+![S's Dual Strategy — Immigration convergence and economic divergence](/assets/figures/welfare_fig2_dual_strategy.png)
 
 *Figure 2: S's Dual Strategy. Left: Immigration convergence toward V. Right: Economic divergence — S stays left while V moves. S moves toward V on immigration but maintains its left-economic position throughout.*
 
-This two-dimensional repositioning created a unique political space — the welfare chauvinist quadrant — that no other major party occupies as clearly. S's repositioning from 2014 to 2019 is the sharpest upward move (toward immigration restriction) among all major parties, with minimal horizontal movement on the economic axis.
+Figure 3 illustrates this two-dimensional repositioning as party movement arrows from 2014 to 2019. Each party's shift is plotted in the economic left-right (x-axis) versus immigration policy (y-axis) space. S's arrow is visually the most dramatic: a sharp move upward (toward restrictive) on immigration with minimal horizontal movement (stable economic-left position). Other parties show comparatively modest changes. DF remains anchored at the restrictive-right position. The left parties (SF, RV, EL) show varied but generally smaller movements. V shifts moderately. This visualization confirms that S's elite-level repositioning created a unique political space — the welfare chauvinist quadrant — that no other major party occupies as clearly.
+
+![Party Movement 2014→2019 in Two-Dimensional Policy Space](/assets/figures/welfare_fig3_party_movement.png)
+
+*Figure 3: Party Movement 2014→2019 in Two-Dimensional Policy Space. S moves sharply upward on immigration while staying left on economics.*
 
 ---
 
@@ -46,13 +52,13 @@ This two-dimensional repositioning created a unique political space — the welf
 
 ## 3a. Two-Dimensional Attitude Space
 
-Figure 3 plots respondents in the two-dimensional attitude space for each wave: welfare generosity (x-axis) versus immigration restrictiveness (y-axis), with points colored by party vote. Quadrant lines are drawn at the wave-specific medians. The top-right quadrant represents welfare chauvinists (generous welfare preferences plus restrictive immigration attitudes), while the bottom-left represents market liberals (low welfare generosity plus open immigration attitudes). The top-left captures nationalist minimalists (restrictive immigration but low welfare generosity) and the bottom-right captures universalists (generous welfare plus open immigration).
+Figure 4 plots respondents in the two-dimensional attitude space for each wave: welfare generosity (x-axis) versus immigration restrictiveness (y-axis), with points colored by party vote. Quadrant lines are drawn at the wave-specific medians. The top-right quadrant represents welfare chauvinists (generous welfare preferences plus restrictive immigration attitudes), while the bottom-left represents market liberals (low welfare generosity plus open immigration attitudes). The top-left captures nationalist minimalists (restrictive immigration but low welfare generosity) and the bottom-right captures universalists (generous welfare plus open immigration).
 
 Several patterns emerge across the four panels. S voters (red) cluster in the upper portion of the welfare-generous half, consistent with the welfare chauvinist profile. V voters (dark blue) spread more broadly, with concentration in the lower-right (universalist) and lower-left (market liberal) quadrants. DF voters (gold) cluster strongly in the upper-right welfare chauvinist quadrant. The left parties (SF, RV, EL) concentrate in the lower half (less immigration-restrictive), with SF and EL occupying the universalist quadrant and RV spread across the liberal quadrants.
 
-![Two-Dimensional Attitude Space by Party Vote (2011–2022)](/assets/figures/fig05_welfare_chauvinist_quadrants.png)
+![Two-Dimensional Attitude Space by Party Vote (2011–2022)](/assets/figures/welfare_fig4_attitude_space.png)
 
-*Figure 3: Two-Dimensional Attitude Space by Party Vote (2011–2022). Dashed lines at wave-specific medians define four quadrants. Top-right = welfare chauvinist; bottom-left = market liberal.*
+*Figure 4: Two-Dimensional Attitude Space by Party Vote (2011–2022). Dashed lines at wave-specific medians define four quadrants. Top-right = welfare chauvinist; bottom-left = market liberal.*
 
 ## 3b. Welfare Chauvinist Segment Size
 
@@ -72,25 +78,25 @@ Table 1 reports the percentage of each party's voters classified as welfare chau
 
 Several findings stand out. First, the overall welfare chauvinist segment among voters of the six focus parties fluctuates: 21.0% (2011), 25.8% (2015), 31.4% (2019), and 20.5% (2022). The 2019 peak is notable — it coincides with the election where S ran most explicitly on the dual strategy. Second, S's welfare chauvinist share rises from 33.3% in 2011 to 46.2% in 2019 before declining to 32.0% in 2022. The 2019 spike represents a near-majority of S voters holding welfare chauvinist attitudes. Third, DF voters are consistently the most welfare chauvinist (34.8% in 2011, peaking at 46.2% in 2019), but S nearly matches DF by 2019. Fourth, V voters are consistently the least welfare chauvinist among right-of-center parties (9.8% to 17.5%), reflecting V's more market-liberal profile.
 
-Figure 4 shows the party composition of the welfare chauvinist segment across waves. S voters constituted the largest share of welfare chauvinists in 2019, reflecting both S's large vote share and the high proportion of its voters with welfare chauvinist attitudes. DF's compositional share declines as its overall vote share collapsed in 2019 and 2022.
+Figure 5 shows the party composition of the welfare chauvinist segment across waves. S voters constituted the largest share of welfare chauvinists in 2019, reflecting both S's large vote share and the high proportion of its voters with welfare chauvinist attitudes. DF's compositional share declines as its overall vote share collapsed in 2019 and 2022.
 
-![Party Composition of the Welfare Chauvinist Segment (2011–2022)](/assets/figures/fig02_party_origins_crossers.png)
+![Party Composition of the Welfare Chauvinist Segment (2011–2022)](/assets/figures/welfare_fig5_segment_composition.png)
 
-*Figure 4: Party Composition of the Welfare Chauvinist Segment (2011–2022). S's share peaks in 2019; DF's declines following its electoral collapse.*
+*Figure 5: Party Composition of the Welfare Chauvinist Segment (2011–2022). S's share peaks in 2019; DF's declines following its electoral collapse.*
 
-Figure 5 tracks the welfare chauvinist share within each party's electorate over time. The key finding is S's trajectory: a sharp rise from 33% to 46% between 2015 and 2019 (the period of S's most explicit dual-strategy messaging), followed by a return to 32% in 2022. DF mirrors this peak-and-decline pattern but at higher absolute levels. The left parties (SF, RV, EL) remain below 30% throughout, as expected. V sits at the bottom, reflecting its economically liberal voter base.
+Figure 6 tracks the welfare chauvinist share within each party's electorate over time. The key finding is S's trajectory: a sharp rise from 33% to 46% between 2015 and 2019 (the period of S's most explicit dual-strategy messaging), followed by a return to 32% in 2022. DF mirrors this peak-and-decline pattern but at higher absolute levels. The left parties (SF, RV, EL) remain below 30% throughout, as expected. V sits at the bottom, reflecting its economically liberal voter base.
 
-![Share of Welfare Chauvinists Among Each Party's Voters (2011–2022)](/assets/figures/fig01_switch_types_by_wave.png)
+![Share of Welfare Chauvinists Among Each Party's Voters (2011–2022)](/assets/figures/welfare_fig6_share_by_party.png)
 
-*Figure 5: Share of Welfare Chauvinists Among Each Party's Voters (2011–2022). S and DF peak in 2019; both decline in 2022.*
+*Figure 6: Share of Welfare Chauvinists Among Each Party's Voters (2011–2022). S and DF peak in 2019; both decline in 2022.*
 
 ## 3c. Supplementary: Spending Battery Welfare Chauvinism
 
-For the three waves with spending battery data (2011, 2015, 2019), Figure 6 shows the mean spending-based welfare chauvinism index (folkepension spending minus refugee spending) by party. Positive values indicate a preference for more pension spending relative to refugee spending — a direct operationalization of welfare chauvinism. DF voters score highest on this measure in every wave, followed by S voters. V voters cluster near zero, reflecting a more balanced spending profile. Importantly, S voters' spending-based welfare chauvinism increases over the 2011–2019 period, consistent with the broader attitudinal pattern documented above.
+For the three waves with spending battery data (2011, 2015, 2019), Figure 7 shows the mean spending-based welfare chauvinism index (folkepension spending minus refugee spending) by party. Positive values indicate a preference for more pension spending relative to refugee spending — a direct operationalization of welfare chauvinism. DF voters score highest on this measure in every wave, followed by S voters. V voters cluster near zero, reflecting a more balanced spending profile. Importantly, S voters' spending-based welfare chauvinism increases over the 2011–2019 period, consistent with the broader attitudinal pattern documented above.
 
-![Spending-Based Welfare Chauvinism by Party (2011, 2015, 2019)](/assets/figures/fig03_attitudes_by_switch_type.png)
+![Spending-Based Welfare Chauvinism by Party (2011, 2015, 2019)](/assets/figures/welfare_fig7_spending_battery.png)
 
-*Figure 6: Spending-Based Welfare Chauvinism by Party (2011, 2015, 2019). Index = folkepension spending preference minus refugee spending preference. S voters show increasing welfare chauvinism on this direct measure.*
+*Figure 7: Spending-Based Welfare Chauvinism by Party (2011, 2015, 2019). Index = folkepension spending preference minus refugee spending preference. S voters show increasing welfare chauvinism on this direct measure.*
 
 ---
 
@@ -104,11 +110,11 @@ This result deserves careful interpretation. The negative correlation does not m
 
 ## Model 1b: Pooled Difference-in-Differences
 
-Model 1b pools all four waves and tests whether the S–V gap on immigration restrictiveness changed in the post-convergence period (2019–2022 vs. 2011–2015), controlling for welfare generosity, gender, and age. The key coefficient is the party_A × post interaction: β=0.189 (SE=0.078, p=0.016, n=3,661, R²=0.063). This positive and significant coefficient indicates that S voters became relatively more immigration-restrictive compared to V voters in the post-convergence period, net of their welfare preferences.
+Model 1b pools all four waves and tests whether the S–V gap on immigration restrictiveness changed in the post-convergence period (2019–2022 vs. 2011–2015), controlling for welfare generosity, gender, and age. The key coefficient is the party_A × post interaction: β=0.189 (SE=0.078, p=0.016, n=3,661, R²=0.063). This positive and significant coefficient indicates that S voters became relatively more immigration-restrictive compared to V voters in the post-convergence period, net of their welfare preferences. The S party dummy itself is negative (β=−0.354, p<0.001), confirming that S voters are, on average, less restrictive than V voters on immigration. The post dummy is positive (β=0.173, p=0.004), indicating a general rightward shift on immigration across both parties' electorates. Welfare generosity is negatively associated with immigration restrictiveness (β=−0.145, p<0.001), consistent with the per-wave findings.
 
 ## Model 2: Three-Way Interaction
 
-Model 2 tests whether the welfare-immigration correlation itself changed differentially for S voters across waves. The three-way interaction terms are: welfare_gen × party_A × wave_2019 = 0.002 (SE=0.097, p=0.981) and welfare_gen × party_A × wave_2022 = 0.171 (SE=0.103, p=0.097). The 2019 coefficient is essentially zero, indicating no differential change in the welfare-immigration correlation for S voters in 2019. The 2022 coefficient is marginally significant at the 10% level and positive, suggesting a weakly emerging pattern by 2022 — but the statistical evidence is not strong enough to reject the null of no differential change at conventional significance levels.
+Model 2 tests whether the welfare-immigration correlation itself changed differentially for S voters across waves. This is the most demanding test of the welfare chauvinist coherence hypothesis: does the relationship between welfare generosity and immigration restrictiveness become more positive (or less negative) specifically among S voters in later waves? The three-way interaction terms are: welfare_gen × party_A × wave_2019 = 0.002 (SE=0.097, p=0.981) and welfare_gen × party_A × wave_2022 = 0.171 (SE=0.103, p=0.097). The 2019 coefficient is essentially zero, indicating no differential change in the welfare-immigration correlation for S voters in 2019. The 2022 coefficient is marginally significant at the 10% level and positive, suggesting a weakly emerging pattern by 2022 — but the statistical evidence is not strong enough to reject the null of no differential change at conventional significance levels.
 
 | Model & Variable | Coef. | SE | p-value | N | R² |
 |---|---|---|---|---|---|
@@ -126,13 +132,15 @@ Model 2 tests whether the welfare-immigration correlation itself changed differe
 
 ## Model 3: All-Party Difference-in-Differences
 
-Model 3 extends the DiD framework to all six major parties, with V as the reference category (n=6,054, R²=0.190). The party_A × post interaction is 0.205 (SE=0.079, p=0.010) — S voters became significantly more immigration-restrictive relative to V voters in the post-period. No other party shows significant positive convergence toward V: SF (−0.068, p=0.572), RV (−0.056, p=0.616), DF (0.071, p=0.548). The party-specificity of the S effect supports the interpretation that S's elite-level dual strategy had a measurable impact on its voters' immigration attitudes, above and beyond any general trend.
+Model 3 extends the DiD framework to all six major parties, with V as the reference category (n=6,054, R²=0.190). The party_A × post interaction is 0.205 (SE=0.079, p=0.010) — S voters became significantly more immigration-restrictive relative to V voters in the post-period. No other party shows significant positive convergence toward V: SF (−0.068, p=0.572), RV (−0.056, p=0.616), DF (0.071, p=0.548). Enhedslisten shows a marginally significant negative effect (−0.211, p=0.094), suggesting EL voters may have diverged from V in the opposite direction. The party-specificity of the S effect supports the interpretation that S's elite-level dual strategy had a measurable impact on its voters' immigration attitudes, above and beyond any general trend.
 
-Figure 7 visualizes the relationship between welfare generosity and immigration restrictiveness by dividing each wave's sample into welfare generosity terciles and plotting the mean immigration restrictiveness for S, V, and DF voters at each tercile. Across all waves, higher welfare generosity is associated with lower immigration restrictiveness for all three parties. However, DF voters maintain high immigration restrictiveness regardless of their welfare preferences (a flat, high line), while S and V voters show a steeper negative gradient. The gradient for S voters appears to flatten somewhat by 2019 — potentially consistent with emerging welfare chauvinism — but the pattern reverses in 2022.
+## Attitude Coherence by Party
 
-![Immigration Restrictiveness by Welfare Generosity Tercile, Party, and Wave](/assets/figures/fig04_directional_asymmetry.png)
+Figure 8 visualizes the relationship between welfare generosity and immigration restrictiveness by dividing each wave's sample into welfare generosity terciles and plotting the mean immigration restrictiveness for S, V, and DF voters at each tercile. Across all waves, higher welfare generosity is associated with lower immigration restrictiveness for all three parties. However, DF voters maintain high immigration restrictiveness regardless of their welfare preferences (a flat, high line), while S and V voters show a steeper negative gradient. The gradient for S voters appears to flatten somewhat by 2019 — potentially consistent with emerging welfare chauvinism — but the pattern reverses in 2022.
 
-*Figure 7: Immigration Restrictiveness by Welfare Generosity Tercile, Party, and Wave. Lines show mean immigration restrictiveness at each tercile level. A flattening of S's line would indicate growing welfare chauvinist coherence.*
+![Immigration Restrictiveness by Welfare Generosity Tercile, Party, and Wave](/assets/figures/welfare_fig8_tercile.png)
+
+*Figure 8: Immigration Restrictiveness by Welfare Generosity Tercile, Party, and Wave. Lines show mean immigration restrictiveness at each tercile level. A flattening of S's line would indicate growing welfare chauvinist coherence.*
 
 ---
 
@@ -144,7 +152,7 @@ All four components of the welfare generosity index show significant negative as
 
 ## Efterløn as Alternative Welfare Measure
 
-The efterløn (early retirement) item provides an alternative welfare preference measure. Among S+V voters, the relationship between efterløn support and immigration restrictiveness varies across waves: 2011 (β=−0.052, p=0.060), 2015 (β=−0.033, p=0.266), **2019 (β=0.084, p<0.001)**, and 2022 (β=−0.070, p=0.015). The sign reversal in 2019 is striking: in that wave, support for efterløn is *positively* associated with immigration restrictiveness — a direct welfare chauvinist pattern. This may reflect the salience of the Arne-pension debate, which explicitly framed early retirement as a benefit for "hardworking Danes" and was coupled with S's restrictive immigration platform. By 2022, the coefficient reverts to negative, suggesting this was a context-dependent effect rather than a durable realignment.
+The efterløn (early retirement) item provides an alternative welfare preference measure. Among S+V voters, the relationship between efterløn support and immigration restrictiveness varies across waves: 2011 (β=−0.052, p=0.060), 2015 (β=−0.033, p=0.266), **2019 (β=0.084, p<0.001)**, and 2022 (β=−0.070, p=0.015). The sign reversal in 2019 is striking: in that wave, support for efterløn is *positively* associated with immigration restrictiveness — a direct welfare chauvinist pattern. This may reflect the salience of the Arne-pension debate, which explicitly framed early retirement as a benefit for "hardworking Danes" and was coupled with S's restrictive immigration platform. By 2022, the coefficient reverts to negative, suggesting this was a context-dependent effect rather than a durable realignment. The 2019 efterløn finding is perhaps the strongest single piece of evidence for welfare chauvinism in the data.
 
 ## Spending Battery Direct Test
 
@@ -170,8 +178,16 @@ Among S voters, the correlation between folkepension and refugee spending prefer
 
 These findings contribute to the welfare chauvinism literature in several ways. Van Oorschot's (2006) deservingness framework predicts that native welfare beneficiaries will be perceived as more deserving than immigrants, creating the potential for welfare chauvinist attitudes. The DNES data confirm that this potential is substantial — roughly a quarter to a third of Danish voters hold attitudes consistent with welfare chauvinism. However, the finding that the welfare-immigration correlation is consistently negative suggests that welfare chauvinism is better understood as a minority cross-cutting attitude pattern rather than the dominant mode of attitude organization.
 
-The connection to the cue-taking literature is important. S's dual strategy can be understood as a deliberate elite cue that bundles immigration restrictiveness with welfare generosity. The 2019 evidence suggests this cue was partially effective: S voters' attitudes on efterløn and spending showed a welfare chauvinist pattern in the election where S most explicitly promoted this bundle. The decline by 2022 raises the question of durability: was 2019 a one-off effect driven by campaign salience, or the beginning of a lasting attitudinal realignment?
+The connection to the cue-taking literature is important. S's dual strategy can be understood as a deliberate elite cue that bundles immigration restrictiveness with welfare generosity. The 2019 evidence suggests this cue was partially effective: S voters' attitudes on efterløn and spending showed a welfare chauvinist pattern in the election where S most explicitly promoted this bundle. The decline by 2022 raises the question of durability: was 2019 a one-off effect driven by campaign salience, or the beginning of a lasting attitudinal realignment? The 2026 "retfærdig pension" proposal (slowing retirement age increases, expanding Arne-pension) represents S's latest iteration of this strategy, suggesting the party leadership considers the welfare-chauvinist voter segment electorally valuable.
 
 ## S's Dual Strategy: Mixed Evidence
 
 The evidence for S's success in capturing welfare chauvinist voters is mixed. On the positive side, S did increase its welfare chauvinist vote share substantially in 2019, the DiD models show significant S-specific immigration restrictiveness gains, and the spending-level data show a clear welfare chauvinist pattern among S voters in 2019. On the negative side, these effects partially reversed by 2022, the three-way interaction is not significant at conventional levels, and the overall welfare-immigration correlation remains negative. The most charitable interpretation is that S's dual strategy activated latent welfare chauvinism in 2019 but has not yet produced a durable attitude realignment.
+
+## Limitations
+
+Several limitations merit discussion. First, the DNES data are repeated cross-sections, not panel data — individual-level attitude change cannot be tracked directly. Second, the welfare generosity index captures general redistributive preferences rather than welfare specifically for Danes. A more direct measure would ask about benefits conditional on citizenship or ethnicity. Third, the 2022 spending battery was dropped, limiting the direct spending-based welfare chauvinism measure to three waves. Fourth, potential reverse causality cannot be ruled out: voters with preexisting welfare chauvinist attitudes may have been attracted to S because of its strategy, creating apparent "capture" through compositional change rather than persuasion. Fifth, the median-split typology is inherently arbitrary — different cutpoints yield different segment sizes.
+
+## Future Research
+
+The most valuable extension would be a survey experiment manipulating S's framing of welfare policy: comparing a welfare-chauvinist frame ("pension generosity for hardworking Danes") with a universalist frame ("pension generosity for all workers") and a neutral frame. This would allow direct testing of the deservingness mechanism and resolve the causal ambiguity inherent in cross-sectional data. Danish panel data (if accessible) would also allow tracking individual-level attitude change. Finally, extending the analysis to other Nordic countries where social democratic parties have pursued similar dual strategies (e.g., Sweden's SAP) would test the generalizability of the Danish findings.
