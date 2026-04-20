@@ -6,6 +6,7 @@
   <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/lang.js"></script>
 </head>
 <body>
   {% include nav.html %}

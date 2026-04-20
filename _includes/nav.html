@@ -2,9 +2,16 @@
   <div class="nav-inner">
     <a class="site-title" href="/">Victor Marques Fejø</a>
     <div class="nav-links">
-      <a href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
-      <a href="/analyses/" {% if page.url contains '/analyses' %}class="active"{% endif %}>Analyses</a>
-      <a href="/about/" {% if page.url == '/about/' %}class="active"{% endif %}>About</a>
+      <a href="/" {% if page.url == '/' %}class="active"{% endif %}>
+        <span class="lang-en">Home</span><span class="lang-da">Forside</span>
+      </a>
+      <a href="/analyses/" {% if page.url contains '/analyses' %}class="active"{% endif %}>
+        <span class="lang-en">Analyses</span><span class="lang-da">Analyser</span>
+      </a>
+      <a href="/about/" {% if page.url == '/about/' %}class="active"{% endif %}>
+        <span class="lang-en">About</span><span class="lang-da">Om</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" onclick="toggleLang()">Dansk</button>
     </div>
   </div>
 </nav>

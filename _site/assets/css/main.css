@@ -297,30 +297,6 @@ figcaption {
 }
 
 /* ============================================================
-   Language toggle
-   ============================================================ */
-[data-lang="en"] .lang-da { display: none; }
-[data-lang="da"] .lang-en { display: none; }
-
-.lang-toggle {
-  font-family: system-ui, -apple-system, sans-serif;
-  font-size: 0.85rem;
-  color: #555;
-  background: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 3px 10px;
-  margin-left: 20px;
-  cursor: pointer;
-  transition: border-color 0.15s, color 0.15s;
-}
-
-.lang-toggle:hover {
-  border-color: #2a5db0;
-  color: #2a5db0;
-}
-
-/* ============================================================
    Mobile
    ============================================================ */
 @media (max-width: 600px) {

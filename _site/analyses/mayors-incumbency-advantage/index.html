@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The New Incumbency Advantage: Danish Municipal Elections, 2005–2025 &mdash; Victor Marques Fejø</title>
+  <meta name="description" content="When a new party wins the mayoral post in a Danish municipality, does it gain a vote share bonus at its first reelection? Using panel data from six elections...">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <nav class="site-nav">
+  <div class="nav-inner">
+    <a class="site-title" href="/">Victor Marques Fejø</a>
+    <div class="nav-links">
+      <a href="/" >Home</a>
+      <a href="/analyses/" class="active">Analyses</a>
+      <a href="/about/" >About</a>
+    </div>
+  </div>
+</nav>
+
+  <main class="page-content">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">The New Incumbency Advantage: Danish Municipal Elections, 2005–2025</h1>
+    <p class="post-meta">
+      March 20, 2026
+       &mdash; Thesis Analysis
+    </p>
+  </header>
+  <div class="post-content">
+    <p><em>Analytical Results from Danish Municipal Elections, 2005–2025</em></p>
+
+<p><em>Victor Marques Fejø — March 2026</em></p>
+
+<hr />
+
+<h1 id="1-introduction-and-research-design">1. Introduction and Research Design</h1>
+
+<p>When a new party wins the mayoral post in a Danish municipality, does the new mayor’s party gain a vote share bonus at its first reelection? The incumbency advantage literature suggests it should. Incumbents benefit from greater visibility, media exposure, credit-claiming for public service delivery, and preferential access to the municipal administration. In Denmark, where the <em>borgmester</em> is indirectly elected through post-election coalition negotiations (<em>konstituering</em>) rather than by direct popular vote, these mechanisms may be especially important: the borgmester is the most visible local politician and the face of the municipal government, even though voters do not directly choose the mayor.</p>
+
+<p>The international literature on local incumbency advantages includes Dahlgaard (2016), who documents a personal incumbency advantage for municipal council members in Danish local elections using a regression discontinuity design. Freier (2015) studies German mayors, and Furdas and Homolkova (2008) examine Czech local elections. Notably, while Dahlgaard establishes that individual council incumbents enjoy a reelection bonus, the question of whether the mayor’s party specifically benefits from holding the borgmester post remains unanswered. This is a distinct question: the mayor has access to institutional resources, media visibility, and credit-claiming opportunities that ordinary council members lack. If an incumbency bonus exists at the council level, it should be even stronger for the party that controls the mayoral office.</p>
+
+<p>This analysis uses polling-station-level data from the Danish Election Database for six municipal elections (KV2005 through KV2025), aggregated to the municipality level, combined with a hand-coded dataset of borgmester party affiliations for all 98 Danish municipalities. The panel yields 470 municipality-election observations with valid lagged vote share data, including 149 turnover events and 115 first reelections — a substantially larger sample than earlier analyses restricted to three elections.</p>
+
+<p>The dependent variable is the change in the mayor’s party vote share from one election to the next (Δ mayor party share). The key independent variable is a binary indicator for ‘first reelection’ — coded 1 when the current mayor’s party defends the borgmester post for the first time after a power shift. Controls include the party’s national trend, municipal population (log), the outgoing mayor’s tenure length, and the number of competing parties.</p>
+
+<hr />
+
+<h1 id="2-descriptive-patterns">2. Descriptive Patterns</h1>
+
+<p>The dataset covers 98 municipalities across six elections (KV2005–KV2025), yielding 470 municipality-election observations. Table 1 presents summary statistics.</p>
+
+<p><strong>Table 1: Summary Statistics</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Min</th>
+      <th>Max</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Δ Mayor party share</td>
+      <td>0.747</td>
+      <td>8.164</td>
+      <td>−23.573</td>
+      <td>31.483</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <td>Mayor party share</td>
+      <td>34.274</td>
+      <td>10.098</td>
+      <td>6.406</td>
+      <td>61.781</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <td>Turnover</td>
+      <td>0.317</td>
+      <td>0.466</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <td>First reelection</td>
+      <td>0.245</td>
+      <td>0.43</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <td>National trend</td>
+      <td>−1.402</td>
+      <td>2.929</td>
+      <td>−8.925</td>
+      <td>6.827</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <td>Log population</td>
+      <td>10.029</td>
+      <td>0.743</td>
+      <td>7.1</td>
+      <td>12.693</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <td>Previous tenure</td>
+      <td>2.553</td>
+      <td>1.506</td>
+      <td>1.0</td>
+      <td>6.0</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <td>N parties</td>
+      <td>8.219</td>
+      <td>1.301</td>
+      <td>4.0</td>
+      <td>12.0</td>
+      <td>470</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The mean change in the mayor party’s vote share is +0.7 percentage points, indicating that mayor parties on average hold their ground or gain slightly. Nearly a third (31.7%) of observations involve a mayoral turnover, and 24.5% represent first reelections. Municipal politics in Denmark is characterized by frequent power shifts: 158 turnovers occurred across the five transition periods, averaging roughly 30 per election cycle. KV2009 saw the most turnovers (39), likely reflecting the post-financial-crisis electoral volatility, while KV2025 (37 turnovers) captures the fallout from the SVM government’s national unpopularity.</p>
+
+<p>The high turnover rate underscores the relevance of the research question. With roughly one in three municipalities changing mayor party each cycle, the incumbency advantage — or lack thereof — has significant implications for local party strategy and coalition formation.</p>
+
+<p><em>Figure 1 reveals a clear rightward shift for first-reelection municipalities. The mean vote share change for new mayor parties at their first reelection is approximately +4.6 pp, compared to a near-zero mean for continuing mayors. The distributions overlap substantially, indicating considerable heterogeneity, but the location shift is visually striking.</em></p>
+
+<hr />
+
+<h1 id="3-regression-results">3. Regression Results</h1>
+
+<p>Table 2 presents the main regression results. All standard errors are heteroskedasticity-robust (HC1). The analysis sample is 470 observations spanning five transition periods.</p>
+
+<p><strong>Table 2: Main Regression Results</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Model 1</th>
+      <th>Model 2</th>
+      <th>Model 3</th>
+      <th>Model 4</th>
+      <th>Model 5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>First reelection</strong></td>
+      <td><strong>4.582</strong></td>
+      <td><strong>4.094</strong></td>
+      <td><strong>2.888</strong></td>
+      <td><strong>2.383</strong></td>
+      <td><strong>4.273</strong></td>
+    </tr>
+    <tr>
+      <td>(SE)</td>
+      <td>(0.837)</td>
+      <td>(0.821)</td>
+      <td>(0.893)</td>
+      <td>(0.902)</td>
+      <td>(1.176)</td>
+    </tr>
+    <tr>
+      <td>National trend</td>
+      <td> </td>
+      <td>0.993</td>
+      <td>0.903</td>
+      <td>0.878</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(SE)</td>
+      <td> </td>
+      <td>(0.111)</td>
+      <td>(0.109)</td>
+      <td>(0.124)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Log population</td>
+      <td> </td>
+      <td> </td>
+      <td>−0.692</td>
+      <td>−0.340</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Previous tenure</td>
+      <td> </td>
+      <td> </td>
+      <td>−0.953</td>
+      <td>−1.159</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>N parties</td>
+      <td> </td>
+      <td> </td>
+      <td>−0.195</td>
+      <td>−0.819</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Election FE</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Municipality FE</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>470</td>
+      <td>470</td>
+      <td>470</td>
+      <td>470</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <td>R²</td>
+      <td>0.058</td>
+      <td>0.185</td>
+      <td>0.223</td>
+      <td>0.236</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Note: Robust (HC1) standard errors in parentheses. DV is Δ mayor party vote share (pp). Model 5 includes municipality and election fixed effects with clustered standard errors. * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01.</em></p>
+
+<p>The results are consistent and statistically significant across all specifications. In the bivariate model (Model 1), the first reelection coefficient is 4.58 pp (p &lt; 0.001), indicating that new mayor parties gain nearly 5 percentage points more than continuing mayors at their first reelection. Controlling for national party trends (Model 2) attenuates the estimate modestly to 4.09 pp (p &lt; 0.001).</p>
+
+<p>With full municipal-level controls (Model 3), the estimate is 2.89 pp and remains highly significant (p = 0.001). The control for previous tenure captures mean reversion (−0.7 pp per term), while the national trend coefficient is positive and significant, confirming that parties riding national tailwinds also gain locally. Adding election fixed effects (Model 4) reduces the estimate to 2.38 pp (p = 0.008), absorbing election-specific shocks but leaving the core finding intact.</p>
+
+<p>The municipality fixed effects model (Model 5) produces the strongest estimate: 4.27 pp (p &lt; 0.001). This is the most demanding specification, absorbing all time-invariant municipality characteristics and all election-specific shocks. The estimate is identified purely from within-municipality variation: the same municipality performs differently when its mayor party is defending for the first time versus when it has been in power for multiple terms. That the coefficient is largest in this specification suggests that unobserved municipal characteristics that correlate with both turnover probability and vote share changes were attenuating the OLS estimates (downward confounding).</p>
+
+<hr />
+
+<h1 id="4-robustness-checks">4. Robustness Checks</h1>
+
+<p><strong>Table 3: Robustness Checks (First Reelection Coefficient, Model 3 Specification)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Specification</th>
+      <th>Coef</th>
+      <th>SE</th>
+      <th>p-value</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7a: Bloc DV</td>
+      <td>1.785</td>
+      <td>0.819</td>
+      <td>0.029</td>
+      <td>372</td>
+    </tr>
+    <tr>
+      <td>7b: Predecessor loss</td>
+      <td>2.409</td>
+      <td>0.937</td>
+      <td>0.010</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <td>7c: Excl. coalition</td>
+      <td>2.883</td>
+      <td>0.932</td>
+      <td>0.002</td>
+      <td>457</td>
+    </tr>
+    <tr>
+      <td>7d: SVM control</td>
+      <td>2.915</td>
+      <td>0.891</td>
+      <td>0.001</td>
+      <td>470</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>All robustness checks support the main finding. Using bloc vote share as the dependent variable (7a) yields a significant but smaller coefficient of 1.79 pp (p = 0.029), suggesting that the incumbency bonus accrues partly but not entirely to the mayor’s party alone; some spillover to coalition partners exists, but the party-specific effect dominates. Controlling for the predecessor’s loss magnitude (7b) reduces the coefficient to 2.41 pp (p = 0.010), confirming that the effect is not simply mechanical: new mayor parties gain even after accounting for how badly their predecessor performed.</p>
+
+<p>Excluding the 16 coalition-driven turnovers (7c) — cases where the outgoing party gained or held vote share but lost the borgmester via <em>konstituering</em> — leaves the coefficient essentially unchanged (2.88 pp, p = 0.002). Controlling for SVM government party status at KV2025 (7d) likewise has no effect (2.92 pp, p = 0.001), indicating that the result is not driven by the peculiar dynamics of the 2025 election.</p>
+
+<hr />
+
+<h1 id="5-summary-and-discussion">5. Summary and Discussion</h1>
+
+<p>This analysis finds a robust and statistically significant new incumbency advantage in Danish municipal politics. New mayor parties gain approximately 2.5–4.5 percentage points at their first reelection after a power shift, depending on specification. The effect is significant at the 1% level in the bivariate, controlled OLS, and municipality fixed effects models. It survives all robustness checks, including controls for national party trends, predecessor collapse, coalition-driven turnovers, and government party status.</p>
+
+<p>The magnitude of the effect is substantively meaningful. An average gain of 3 percentage points for a party that typically holds 30–35% of the vote represents roughly a 10% increase in vote share — enough to shift coalition arithmetic and strengthen the new mayor’s bargaining position at the next <em>konstituering</em>. The effect is consistent with the theoretical mechanisms emphasized in the incumbency advantage literature: new mayors gain visibility, control over the municipal administration, and opportunities for credit-claiming that translate into electoral support.</p>
+
+<p>Two findings deserve particular emphasis. First, the municipality fixed effects estimate (Model 5) is the largest coefficient in the table, suggesting that simple cross-sectional comparisons underestimate the true effect because municipalities that experience turnovers differ systematically from those that do not. Second, the bloc-level analysis shows that while the mayor’s party captures the bulk of the bonus, some spillover to the broader coalition exists — a finding consistent with voters rewarding the governing alliance rather than just the mayor’s party.</p>
+
+<p>Limitations remain. The panel design cannot fully address the endogeneity of turnover: parties win the borgmester when local conditions favour them, and separating this selection effect from a genuine incumbency bonus requires stronger identification. A regression discontinuity design exploiting narrow seat margins in coalition formation would provide cleaner causal evidence but faces feasibility constraints given the small number of near-threshold cases. The six-election panel provides at most five transitions per municipality, limiting the precision of the fixed effects estimates. Finally, the borgmester data is hand-coded and, as the substantial corrections between data versions demonstrated, measurement error in mayor party assignment can significantly affect results.</p>
+
+<p>For the case of Frederiksberg, where Socialdemokratiet gained the borgmester in 2021 and increased its vote share from 17.1% to 20.7% at KV2025 (+3.7 pp), the gain is consistent with the estimated incumbency bonus of 2.5–4.5 pp. The broader pattern across 158 turnover events over two decades suggests that this is not an anomaly but a systematic feature of Danish municipal politics.</p>
+
+  </div>
+  <div class="post-footer">
+    <a href="/analyses/">&larr; Back to all analyses</a>
+  </div>
+</article>
+
+  </main>
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; 2026 Victor Marques Fejø &mdash; Political Science Research</p>
+  </div>
+</footer>
+
+</body>
+</html>

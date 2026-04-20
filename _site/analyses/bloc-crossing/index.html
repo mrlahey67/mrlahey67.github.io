@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crossing the Divide: Bloc-Switching Voters in Denmark, 2011–2022 &mdash; Victor Marques Fejø</title>
+  <meta name="description" content="A descriptive analysis of voters who cross the bloc divide in Danish elections. Using four waves of the Danish National Election Study, I profile bloc-crossi...">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <nav class="site-nav">
+  <div class="nav-inner">
+    <a class="site-title" href="/">Victor Marques Fejø</a>
+    <div class="nav-links">
+      <a href="/" >Home</a>
+      <a href="/analyses/" class="active">Analyses</a>
+      <a href="/about/" >About</a>
+    </div>
+  </div>
+</nav>
+
+  <main class="page-content">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Crossing the Divide: Bloc-Switching Voters in Denmark, 2011–2022</h1>
+    <p class="post-meta">
+      March 18, 2026
+       &mdash; Thesis Analysis
+    </p>
+  </header>
+  <div class="post-content">
+    <p><em>Descriptive Patterns from the Danish National Election Study</em></p>
+
+<p><em>Victor Marques Fejø — March 2026</em></p>
+
+<hr />
+
+<h1 id="1-introduction-and-research-design">1. Introduction and Research Design</h1>
+
+<p>This document presents a descriptive analysis of voters who cross the bloc divide in Danish elections. Using four waves of the Danish National Election Study (DNES: 2011, 2015, 2019, and 2022), I profile bloc-crossing voters, trace the party-level flows that carry voters across the red-blue divide, and examine which issue attitudes predict cross-bloc movement. The analysis covers a period of significant partisan realignment in Denmark, during which the Social Democrats (Socialdemokratiet, S) adopted an increasingly restrictive immigration stance while maintaining left-economic positions, and Dansk Folkeparti (DF) experienced dramatic decline.</p>
+
+<p>The descriptive patterns documented here are intended to motivate a subsequent survey experiment on cross-bloc voter appeal. By identifying who crosses, where they come from, and what drives them, I aim to generate empirically grounded hypotheses about which combinations of policy positions are most effective at attracting voters from the opposing bloc.</p>
+
+<p>The analysis proceeds in four parts: first, I map the size and composition of the bloc-switching segment across waves; second, I profile the attitudinal differences between crossers and loyalists; third, I test whether red-to-blue and blue-to-red switchers have distinct attitudinal profiles; and fourth, I use logistic and multinomial regression to identify the strongest attitudinal predictors of bloc-crossing and assess whether these predictors change over time.</p>
+
+<p>Bloc membership follows standard Danish classification: the red bloc includes A (Socialdemokratiet), B (Radikale Venstre), F (SF), Ø (Enhedslisten), and Å (Alternativet, from 2015). The blue bloc includes V (Venstre), C (Konservative), I (Liberal Alliance), O (Dansk Folkeparti), K (Kristendemokraterne), D (Nye Borgerlige, from 2019), and Æ (Danmarksdemokraterne, 2022). Moderaterne (M, 2022 only) is classified as cross-bloc. Previous vote is measured via recall questions in each wave. Survey weights (weight_1) are applied where available (2019, 2022); 2011 and 2015 analyses are unweighted.</p>
+
+<hr />
+
+<h1 id="2-the-switching-landscape">2. The Switching Landscape</h1>
+
+<h2 id="21-how-large-is-the-bloc-crossing-segment">2.1 How Large is the Bloc-Crossing Segment?</h2>
+
+<p>Across the four waves, the overall bloc-crossing rate ranges from 10.1% to 17.4% of voters with valid switching data. The 2022 wave shows a substantially higher rate (17.4%), largely driven by Moderaterne, which attracted 230 voters (9.6% of the switching sample) from both blocs. Excluding Moderaterne, the traditional bloc-crossing rate in 2022 (red-to-blue + blue-to-red) is 7.7%, comparable to other waves.</p>
+
+<p><img src="/assets/figures/fig01_switch_types_by_wave.png" alt="Voter switching typology by wave (percentage of voters with valid switching data)" /></p>
+
+<p><em>Figure 1. Voter switching typology by wave (percentage of voters with valid switching data).</em></p>
+
+<h2 id="22-where-do-bloc-crossers-flow">2.2 Where Do Bloc-Crossers Flow?</h2>
+
+<p>The dominant direction of cross-bloc movement varies across waves. In 2011 and 2019, the net flow is blue-to-red: 137 and 148 blue-bloc voters moved to the red bloc, compared to only 41 and 49 in the reverse direction. In 2015, the flow reverses: 115 red-to-blue vs. 88 blue-to-red, reflecting the strong performance of Dansk Folkeparti and Liberal Alliance in attracting former red-bloc voters. In 2022, the picture is dominated by Moderaterne, which drew 144 voters from the blue bloc and 86 from the red.</p>
+
+<p>The top party-to-party flows that cross the bloc divide are remarkably consistent. V→A and O→A are among the largest flows in every wave. In 2011, V→A (N=37, 20.8% of crossers) and O→A (N=23, 12.9%) were the top two. By 2019, O→A overtook V→A as the largest flow (N=40, 20.3% vs. N=30, 15.2%), reflecting DF’s collapse and the Social Democrats’ successful appeal to DF voters through restrictive immigration policy.</p>
+
+<p><img src="/assets/figures/fig02_party_origins_crossers.png" alt="Party origins of bloc-crossing voters by wave and direction" /></p>
+
+<p><em>Figure 2. Party origins of bloc-crossing voters by wave and direction.</em></p>
+
+<h2 id="23-the-2019-election-as-critical-case">2.3 The 2019 Election as Critical Case</h2>
+
+<p>The 2019 election is the central case for this analysis because the Social Democrats ran explicitly on a dual strategy: restrictive immigration combined with expanded welfare (the Arne pension). The data confirm that 2019 was distinctive in several respects. First, the blue-to-red flow was the largest in absolute terms (N=148), tied with 2011 as the highest share of valid switchers (7.6%). Second, the party composition of blue-to-red switchers shifted: in 2019, 42.6% came from DF, up from 23.4% in 2011 and 21.6% in 2015. Third, S remained the primary destination for blue-to-red crossers across all waves (51.8% in 2011, 58.0% in 2015, 52.7% in 2019, 71.0% in 2022), but the origin profile shifted toward DF voters.</p>
+
+<p>In 2022, the picture changes dramatically. The blue-to-red flow drops to just 69 voters (2.9%), as Moderaterne captures many of the moderate swing voters who might otherwise have crossed blocs. Among Moderaterne voters, 42.6% came from Venstre and 17.8% from Socialdemokratiet, suggesting that M drew from the traditional centrist swing segment rather than the ideologically motivated bloc-crossers.</p>
+
+<hr />
+
+<h1 id="3-who-crosses-the-divide-attitudinal-profiles">3. Who Crosses the Divide? Attitudinal Profiles</h1>
+
+<h2 id="31-mean-attitudes-by-switching-type">3.1 Mean Attitudes by Switching Type</h2>
+
+<p>Across waves, bloc-crossers are systematically more immigration-restrictive and less welfare-generous than loyal voters. Pooling all waves, crossers score 0.27 points higher on the immigration welfare rights item (p &lt; 0.001, Cohen’s d = 0.22) and 0.25 points lower on welfare generosity (p &lt; 0.001, d = 0.24). Crossers are also slightly less politically interested (d = 0.19) and place themselves slightly further right on the left-right scale (d = 0.13). The demographic profiles of crossers and loyalists are similar: comparable age distributions, gender balance, and education levels.</p>
+
+<p><img src="/assets/figures/fig03_attitudes_by_switch_type.png" alt="Mean attitudes by switch type and wave" /></p>
+
+<p><em>Figure 3. Mean attitudes by switch type and wave. Higher values indicate more restrictive immigration attitudes (1–5), greater welfare generosity (1–5), higher political interest (1–4), and more right-wing self-placement (0–10).</em></p>
+
+<h2 id="32-directional-asymmetry">3.2 Directional Asymmetry</h2>
+
+<p>A key question is whether red-to-blue and blue-to-red switchers have distinct attitudinal profiles. The data suggest meaningful directional differences. Blue-to-red switchers are consistently more welfare-generous than red-to-blue switchers (welfare generosity difference of 0.29–0.69 points across waves), while red-to-blue switchers tend to be more immigration-restrictive in 2015 (difference of 0.54 points). This pattern is consistent with the hypothesis that blue-to-red movement is partly welfare-motivated (voters attracted by left-economic positions) while red-to-blue movement is more immigration-driven.</p>
+
+<p>In 2019, blue-to-red switchers are notably restrictive on immigration (mean = 4.06 on welfare rights, 3.50 on cultural threat), exceeding the loyal-voter average and approaching the red-to-blue level. This suggests that the 2019 blue-to-red flow included voters who were both immigration-restrictive and welfare-supportive, a profile consistent with welfare chauvinism.</p>
+
+<p><img src="/assets/figures/fig04_directional_asymmetry.png" alt="Attitudinal profiles of red-to-blue vs. blue-to-red switchers by wave (means with 95% CIs)" /></p>
+
+<p><em>Figure 4. Attitudinal profiles of red-to-blue vs. blue-to-red switchers by wave (means with 95% CIs).</em></p>
+
+<h2 id="33-the-welfare-chauvinist-profile">3.3 The Welfare Chauvinist Profile</h2>
+
+<p>Using wave-specific medians to classify respondents into four quadrants (welfare chauvinist, universalist, market liberal, nationalist minimalist), I find that blue-to-red switchers are disproportionately welfare chauvinist compared to loyal voters. In 2019, 37.1% of blue-to-red switchers fall in the welfare chauvinist quadrant, compared to 23.8% of loyal voters. This pattern is strongest in 2019, the year S ran on the explicit combination of immigration restriction and welfare expansion. In 2022, the welfare chauvinist share among blue-to-red switchers remains elevated at 34.5%, though the small N (69) warrants caution.</p>
+
+<p>Moderaterne voters in 2022 show a different profile: only 19.0% fall in the welfare chauvinist quadrant, close to the market liberal quadrant. This suggests Moderaterne captured centrist pragmatists rather than the ideologically distinctive welfare chauvinist segment.</p>
+
+<p><img src="/assets/figures/fig05_welfare_chauvinist_quadrants.png" alt="Share of welfare chauvinists by switch type and wave" /></p>
+
+<p><em>Figure 5. Share of welfare chauvinists by switch type and wave.</em></p>
+
+<hr />
+
+<h1 id="4-what-predicts-bloc-crossing-regression-results">4. What Predicts Bloc-Crossing? Regression Results</h1>
+
+<h2 id="41-per-wave-logistic-regressions">4.1 Per-Wave Logistic Regressions</h2>
+
+<p>Per-wave logistic regressions with bloc-crossing (binary) as the dependent variable confirm that both immigration attitudes and welfare generosity are significant predictors. The interaction between immigration restrictiveness and welfare generosity is positive and significant in all four waves, indicating that the combination of restrictive immigration attitudes and generous welfare preferences is particularly associated with bloc-crossing. Pseudo-R² values range from 0.030 (2015) to 0.065 (2019), suggesting modest but consistent explanatory power.</p>
+
+<h2 id="42-pooled-model-with-wave-interactions">4.2 Pooled Model with Wave Interactions</h2>
+
+<p>The pooled model with wave interactions (reference: 2011) tests whether the attitudinal drivers of bloc-crossing changed over time. The wave interaction terms for immigration and welfare attitudes are generally not statistically significant at conventional levels, though the immigration × 2015 interaction approaches significance (p = 0.066). The three-way interaction (immigration × welfare × wave) is also non-significant across waves. This suggests that the basic attitudinal structure of bloc-crossing is relatively stable over the 2011–2022 period, even as the political context changed substantially. The consistently significant positive interaction between immigration restrictiveness and welfare generosity in the per-wave models, combined with the non-significant wave interactions, points to a durable welfare chauvinist dynamic in cross-bloc voting.</p>
+
+<h2 id="43-multinomial-model-direction-of-switching">4.3 Multinomial Model: Direction of Switching</h2>
+
+<p>The multinomial logit model (reference category: loyal) reveals that the attitudinal predictors of red-to-blue and blue-to-red switching are qualitatively similar but differ in magnitude. Both directions are predicted by immigration restrictiveness and welfare generosity, with positive interactions. However, the welfare generosity coefficient is stronger for red-to-blue switching (β = −1.283 vs. −0.919 for blue-to-red), suggesting that low welfare generosity is a particularly strong driver of rightward movement. The immigration coefficient is stronger for blue-to-red switching (β = −0.825 vs. −0.675), consistent with immigration restrictiveness pulling voters leftward (toward S) from the blue bloc.</p>
+
+<h2 id="44-party-competence-on-refugee-policy">4.4 Party Competence on Refugee Policy</h2>
+
+<p>Cross-tabulations of refugee policy competence attributions by switch type reveal that blue-to-red switchers increasingly attribute refugee competence to S over time. In 2015, 41% of blue-to-red switchers named A as best at handling refugees, rising to 58% in 2022. This is consistent with S’s successful cultivation of a restrictive immigration reputation that attracted former blue-bloc voters. Red-to-blue switchers, by contrast, most frequently attribute competence to DF (O) or V, suggesting they are voters who value restrictive policy but seek it from the traditional restrictive parties.</p>
+
+<hr />
+
+<h1 id="5-summary-and-implications">5. Summary and Implications</h1>
+
+<p>This descriptive analysis yields several key findings about bloc-crossing voters in Denmark between 2011 and 2022.</p>
+
+<p>First, the bloc-crossing segment is modest but consistent (10–11% in most waves), with a notable spike in 2022 driven by Moderaterne. The dominant cross-bloc flows are V→A and O→A, with the latter becoming increasingly important by 2019 as DF voters were drawn to the Social Democrats’ restrictive immigration platform.</p>
+
+<p>Second, bloc-crossers have a distinctive attitudinal profile: more immigration-restrictive and less welfare-generous than loyal voters, with lower political interest. The directional asymmetry suggests that blue-to-red movement is driven by a welfare chauvinist combination (restrictive on immigration, generous on welfare), while red-to-blue movement is more associated with low welfare generosity and high immigration restrictiveness.</p>
+
+<p>Third, the welfare chauvinist quadrant is disproportionately populated by blue-to-red switchers, especially in 2019 (37.1% vs. 23.8% among loyalists). This pattern is consistent with the hypothesis that S’s dual strategy of restrictive immigration and expanded welfare was particularly effective at attracting welfare chauvinist voters from the blue bloc.</p>
+
+<p>Fourth, regression analysis confirms that both immigration attitudes and welfare generosity predict bloc-crossing, with a consistently significant positive interaction term. The attitudinal structure of bloc-crossing is relatively stable across waves, suggesting a durable underlying dynamic.</p>
+
+<h2 id="51-implications-for-experimental-design">5.1 Implications for Experimental Design</h2>
+
+<p>These findings suggest several priorities for a follow-up survey experiment. The experiment should test the welfare chauvinist appeal directly: presenting voters with candidate profiles that combine restrictive immigration with generous welfare positions (the S strategy) and comparing their cross-bloc pull to profiles with only one of these elements. The target population should include current blue-bloc voters with welfare chauvinist profiles (high welfare generosity, high immigration restrictiveness), as this is the segment most likely to cross. The experiment should also vary the source party of the candidate to test whether the appeal depends on partisan branding (an S candidate vs. a generic left candidate). Finally, the 2022 findings on Moderaterne suggest testing whether centrist framing can attract the same crossover segment or whether the welfare chauvinist appeal requires explicitly left-economic positioning.</p>
+
+  </div>
+  <div class="post-footer">
+    <a href="/analyses/">&larr; Back to all analyses</a>
+  </div>
+</article>
+
+  </main>
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; 2026 Victor Marques Fejø &mdash; Political Science Research</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -4,7 +4,17 @@ title: Analyses
 permalink: /analyses/
 ---
 
-Empirical analyses from my Master's thesis on Danish immigration politics and public opinion. Each piece draws on the Danish National Election Study (2011–2022) and the Chapel Hill Expert Survey.
+<div class="lang-en">
+
+Empirical analyses from a structured thesis workshop on Danish electoral politics. The pieces draw on survey data, expert party ratings, polling-station records, and parish-level socioeconomic data to examine how Danish voters form opinions, switch parties, and respond to elite signals — at both the national and municipal level.
+
+</div>
+
+<div class="lang-da">
+
+Empiriske analyser fra et struktureret speciale-workshop om dansk valgpolitik. Analyserne trækker på surveydata, ekspertvurderinger af partipositioner, afstemningsstedsdata og sogneniveau-socioøkonomiske data for at undersøge, hvordan danske vælgere danner holdninger, skifter parti og reagerer på elite-signaler — på både nationalt og kommunalt niveau.
+
+</div>
 
 <ul class="post-list">
 {% for post in site.posts %}
