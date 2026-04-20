@@ -30,15 +30,15 @@ Socialdemokratiet underwent a striking shift: moving from 5.5 in the 2014 CHES s
 
 The S–V gap on immigration has contracted dramatically over time: 1.0 (2006) → 1.4 (2010) → 2.2 (2014) → 0.64 (2019) → −0.18 (2024). By 2024, experts rated S as slightly more restrictive than V on immigration (negative gap), a historic realignment in Danish party positioning. This elite-level convergence is the essential precondition for the mainstreaming hypothesis to operate. Without elite convergence, voter convergence cannot occur.
 
-![Expert-rated party positions on immigration (0–10 scale, higher = more restrictive) from 2006 to 2024](/assets/figures/ches_immigration_positions.png)
+![Expert-rated party positions on immigration (0–10 scale, higher = more restrictive) from 2006 to 2024](/assets/figures/ches_immigration_positions_corrected.png)
 
 *Figure 1: CHES Immigration Positions 2006–2024. Higher values indicate more restrictive positions (0 = strongly opposes restriction, 10 = strongly favors restriction).*
 
-![Gap between Socialdemokratiet and Venstre party positions on immigration scale](/assets/figures/ches_sv_gap.png)
+![Gap between Socialdemokratiet and Venstre party positions on immigration scale](/assets/figures/ches_sv_gap_immigration.png)
 
 *Figure 2: S–V Party Gap on Immigration (2006–2024). Negative values indicate S is more restrictive than V.*
 
-![Expert-rated party positions on multiculturalism dimension](/assets/figures/ches_multiculturalism.png)
+![Expert-rated party positions on multiculturalism dimension](/assets/figures/ches_multiculturalism_positions.png)
 
 *Figure 3: CHES Multiculturalism Positions (0–10 scale). Complementary measure of cultural attitudes toward diversity.*
 
